@@ -1,5 +1,5 @@
-const Flower = require("../models/flowerModel");
 
+const Flower = require("../models/flowerModel");
 
 const getFlowers = async (req, res) => {
     try {
@@ -10,10 +10,9 @@ const getFlowers = async (req, res) => {
     }
 };
 
-
 const addFlower = async (req, res) => {
     const { name, description, price, category } = req.body;
-    const image = req.file ? req.file.path : null;
+    const image = req.file ? `${req.protocol}://${req.get("host")}/uploads/${req.file.filename}` : null;
 
     try {
         const flower = new Flower({ name, description, price, category, image });
