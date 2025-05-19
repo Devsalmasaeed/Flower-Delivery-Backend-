@@ -54,8 +54,8 @@ GET /
 
 ## 🌍 Deployment
 - Flower Delivery Backend:[LIVE DEMO](https://flower-delivery-backend.onrender.com/)
-- Live API: [Flowers api](http://localhost:5000/api/flowers)
-- Live API: [Users api](http://localhost:5000/api/users)
+- Live API: [Flowers api](https://flower-delivery-backend.onrender.com/api/flowers)
+- Live API: [Users api](https://flower-delivery-backend.onrender.com/api/users)
 
 
 ## 📜 License
